@@ -26,6 +26,13 @@
 
  }
  */
+ var userForm = document.getElementById("form");
+ userForm.addEventListener("submit", (e) => {
+   e.preventDefault();
+   var userData = new FormData(userForm);
+   correctAnswer(userData);
+ });
+ 
  for(var i = 1; i <= noOfQuestions; i++){
   if(eval('q' + i) == answer[i -1]){
     score++;

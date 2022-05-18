@@ -12,18 +12,18 @@
  - [Licence](#licence)
  - [Authors Info](#Authors-Info)
  ## Description
- <p>This project is a web application that provides javascript question and answers. </p>
-[Go Back to the top](#delani-studio)
+ <p>This project is a web application that provides javascript question and answers. You answer the questions provided  and the results are displayed </p>
+[Go Back to the top](# Java-script-Quizboard)
 ## Features
 As a user of the application,you will be able to :
-1. See a description of what the services offered by the studio
-1. Can make inquiry through a form.
-[Go Back to the top](#delani-studio)
+1. Questions have been provided
+2. Submit button
+[Go Back to the top](# Java-script-Quizboard)
 ## Behaviour Driven Development|
 | Behaviour      | Input        | Output       |
 | :------------- | :----------: | -----------: |
-|  Enter your name  |   Albert Byrone |     |
-| Enter your Email Address  | albertbyrone1677@gmail.com |   |
+|  Enter your name  |   Tonny Chweya |     |
+| Enter your Email Address  | chweyatonny@gmail.com |   |
 | Enter your message or comment   |  I would like to inquire about something     |     |
 | Press Submit|     |Pop up "Albert Byrone , we have received your message. Thank you for reaching out to us.|
 [Go Back to the top](#delani-studio)

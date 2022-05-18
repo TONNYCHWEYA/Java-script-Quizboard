@@ -10,28 +10,36 @@
  ];
  var score =0;
  var noOfQuestions =5;
- // listen to form submission and get user data
-var userForm = document.getElementById("form");
-userForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-  var userData = new FormData(userForm);
-  correctAnswer(userData);
-});
+ var q1 = document.forms["form"]["Q1"].value;
+ var q2 =document.forms["form"]["Q2"].value;
+ var q3= document.forms["form"]["Q3"].value;
+ var q4 = document.forms["form"]["Q4"].value;
+ var q5 = document.forms["form"]["Q5"].value;
+ var results = document.getElementById('results');
+ //compare the answers
+ //if answer was not selected
+ /*for(var i = 1; i <= noOfQuestions; i++){
+   if(eval('q' + i) == ''){
+     alert("You missed question" + i);
+   }
+   
 
-//  compare user's with correct answers
-function correctAnswer(userData) {
-  for (let answer of userData) {
-    var userKey = answer[0];
-    var userValue = answer[1];
-    if (userValue === quizData[userKey]) {
-      score++;
-    }
+ }
+ */
+ 
+ 
+ for(var i = 1; i <= noOfQuestions; i++){
+  if(eval('q' + i) == answer[i -1]){
+    score++;
   }
-  document.getElementById("results").innerText = scoreDiplay(score);
-  userForm.style.display = "none";
-}
-// display the score to user
-function scoreDiplay(score) {
+ }
+ 
+ alert(score);
+ document.getElementById("results").innerText = scoreDiplay(score);
+  
+
+ }
+ function scoreDiplay(score) {
   var score = (score / 5) * 100;
   var message = "";
   if (score < 50) {
@@ -43,4 +51,3 @@ function scoreDiplay(score) {
   }
   return score + "%: " + message;
 }
- }

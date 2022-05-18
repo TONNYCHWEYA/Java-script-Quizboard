@@ -12,9 +12,12 @@
 <body>
   <header>
   <h1>Java Script Questions </h1>
-  
+  <div >
+    <h2 id="results"></h2>
+
+  </div>
   </header>
-  <form id="form">
+  <form name="form" onsubmit="onSubmit()">
   <div>
     <p>1. Which type of javascript language is</p>
     <input type="radio" id="oriented" name="Q1" value="Object-Oriented">
@@ -71,13 +74,9 @@
     <input type="radio" id="none" name="Q5" value="None of the above">
     <label for="none">None of the above</label><br>
   </div>
-  <button type="submit">Submit</button>
+  <input type="submit" value="Submit">
   
   </form>
-  <div >
-    <h2 id="results"></h2>
-
-  </div>
   <script src="./JS/script.js"></script>
 </body>
 </html>

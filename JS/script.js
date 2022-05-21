@@ -1,4 +1,8 @@
- function onSubmit(){
+
+ var results = document.getElementById('results');
+ 
+ 
+ function myFunction(){
  //array of answers
  var answer =[
    'Object-Based',
@@ -15,7 +19,7 @@
  var q3= document.forms["form"]["Q3"].value;
  var q4 = document.forms["form"]["Q4"].value;
  var q5 = document.forms["form"]["Q5"].value;
- var results = document.getElementById('results');
+ 
  //compare the answers
  //if answer was not selected
  /*for(var i = 1; i <= noOfQuestions; i++){
@@ -34,8 +38,8 @@
   }
  }
  
- alert(score);
- document.getElementById("results").innerText = scoreDiplay(score);
+results.innerText = scoreDiplay(score);
+ 
   
 
  }
@@ -49,5 +53,5 @@
   } else {
     message = "Excellent!";
   }
-  return score + "%: " + message;
+  return(score + "%: " + message);
 }

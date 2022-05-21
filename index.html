@@ -7,17 +7,14 @@
   <title>Document</title>
   
 
-  </script>
+  
 </head>
 <body>
   <header>
   <h1>Java Script Questions </h1>
-  <div >
-    <h2 id="results"></h2>
-
-  </div>
   </header>
-  <form name="form" onsubmit="onSubmit()">
+  <div>
+  <form name="form" onsubmit="myFunction()">
   <div>
     <p>1. Which type of javascript language is</p>
     <input type="radio" id="oriented" name="Q1" value="Object-Oriented">
@@ -77,6 +74,12 @@
   <input type="submit" value="Submit">
   
   </form>
+  </div>
+  <div >
+    <p>You scored :<span id="results"></span>%</p>
+
+  </div>
+  
   <script src="./JS/script.js"></script>
 </body>
 </html>

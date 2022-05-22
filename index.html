@@ -5,17 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=>, initial-scale=1.0">
   <title>Document</title>
-  
-
+  <link rel="stylesheet" href="./Assets/CSS/style.css">
   
 </head>
+
+<div class="mainContainer">
+<div>
 <body>
   <header>
   <h1>Java Script Questions </h1>
   </header>
-  <div>
+<div class="questions">
   <form name="form" onsubmit="myFunction()">
-  <div>
+  <div> 
     <p>1. Which type of javascript language is</p>
     <input type="radio" id="oriented" name="Q1" value="Object-Oriented">
     <label for="oriented">Object-Oriented</label><br>
@@ -74,12 +76,15 @@
   <input type="submit" value="Submit">
   
   </form>
-  </div>
-  <div >
+  
+</div>
+
+  <div id="scores">
+    <h3>Results.</h3>
     <p>You scored :<span id="results"></span>%</p>
 
   </div>
-  
+</div>
   <script src="./JS/script.js"></script>
 </body>
 </html>
